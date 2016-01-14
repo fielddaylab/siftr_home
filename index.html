@@ -9,6 +9,10 @@ div,span,body
   font-weight:lighter;
   color:#29333F;
 }
+.white_bg
+{
+  background-color:#FFFFFF;
+}
 .light_bg
 {
   background-color:#F7F7F7;
@@ -41,10 +45,21 @@ div,span,body
   float:right;
 }
 
+/* slideshow */
+.slide
+{
+  float:left;
+  display:table-cell;
+  vertical-align:middle;
+  text-align:center;
+  color:#FFFFFF;
+  height:100%;
+  width:50%;
+}
 
 </style>
 </head>
-<body>
+<body class="dark_bg">
 
 <div id="banner" class="section dark_bg" style="position:relative; min-height:300px;">
 <div id="top_bar" style="height:50px; padding:20px;">
@@ -63,29 +78,42 @@ div,span,body
 </div>
 
 <div id="what_is" class="section yellow_bg">
-What Is Siftr?
-<div>
-Siftr extends learning beyond your computer, books, classroom walls - preparing people of all ages to learn in the wild. A tool for teachers and curious people. Siftr supports you as you explore the world.
+<div style="padding:100px;">
+  <div style="width:200px; height:200px; float:left; margin:20px; border:1px solid white; color:#FF0000;">
+  Siftr
+  </div>
+  <div style="min-height:200px;"> <!-- needs min height, becase as "non-float", this sets height of parent div... html... -->
+    <div style="margin:10px; font-size:20px; color:#FFFFFF;">
+    WHAT IS SIFTR?
+    </div>
+    <div style="margin:10px; color:#FFFFFF;">
+    Siftr extends learning beyond your computer, books,<br /><br />
+    classroom walls - preparing people of all ages to learn<br /><br />
+    in the wild. A tool for teachers and curious people. Siftr<br /><br />
+    supports you as you explore the world.
+    </div>
+  </div>
+</div>
+
+</div>
+
+<div id="discover_map" class="section white_bg">
+<div style="width:350px; padding:40px; margin:0px auto; font-size:35px; font-weight:bold;">
+DISCOVER INVENT HEAR COME UPON SIGN SEE DETECT REVEAL FIND IT UNEARTH EXPLORE USE
 </div>
 </div>
 
-<div id="discover_map" class="section">
-<div>
-Discover Invent Hear Come Upon Sign See Detect Reveal Find It Unearth Explore Use
-</div>
-</div>
-
-<div id="what_people_make" class="section dark_bg">
-<div>
-What Are People Making With Siftr?
+<div id="what_people_make" class="section dark_bg" style="height:300px;">
+<div style="padding:20px; text-align:center; color:#FFFFFF;">
+WHAT ARE PEOPLE MAKING WITH SIFTR?
 </div>
 <div id="what_people_make_slideshow">
-<div> Foraging Hunts </div>
-<div> Scavenger Hunts </div>
+<div class="slide" style="background-color:red;">FORAGING HUNTS</div>
+<div class="slide" style="background-color:blue;">SCAVENGER HUNTS</div>
 </div>
 </div>
 
-<div id="tags" class="section">
+<div id="tags" class="section white_bg">
 <div id="left_tags">
   <div>
   Discover the natural world around you with categories like these:
@@ -136,7 +164,7 @@ Siftr helps you focus, collect, visualize, discuss
 </div>
 </div>
 
-<div id="quadrants" class="section">
+<div id="quadrants" class="section white_bg">
   <div id="focus_quadrant">
     <div>Icon</div>
     <div>Ready, set, focus:</div>
@@ -159,7 +187,7 @@ Siftr helps you focus, collect, visualize, discuss
   </div>
 </div>
 
-<div id="what_will_you_make" class="section" class="section">
+<div id="what_will_you_make" class="section white_bg">
 <div> What kind of Siftr Will you make?  </div>
 <div> Sign up! </div>
 <div> Phone</div>
