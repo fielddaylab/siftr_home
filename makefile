@@ -1,2 +1,2 @@
-run:
+make:
 	open index.html
