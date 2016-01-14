@@ -76,6 +76,18 @@ div,span,body
   border-radius:15px;
 }
 
+/* bullets */
+.bullet
+{
+  font-size:10px;
+  vertical-align:top;
+  color:#E9C32A; /* same as yellow-bg */
+  background-color:#E9C32A; /* same as yellow-bg */
+  height:10px;
+  width:10px;
+  border-radius:10px;
+}
+
 </style>
 </head>
 <body class="dark_bg">
@@ -163,26 +175,33 @@ WHAT ARE PEOPLE MAKING WITH SIFTR?
 </div>
 </div>
 
-<div id="anybody_can_make" class="section light_bg">
-<div id="got_five">
-  <div>
-  Got five minutes? Anybody can make a Siftr.
+<div id="anybody_can_make" class="section light_bg" style="min-height:300px;">
+<div id="got_five" style="width:40%; float:left; padding:20px;">
+  <div style="padding-top:50px;">
+    <div style="float:left;">
+    Siftr
+    </div>
+    <div style="float:left;">
+    Got five minutes? Anybody can make a Siftr.
+    </div>
   </div>
 </div>
-<div id="instructions">
-  <div id="to_do">
-    <div> Choose a topic: What do you want to explore? </div>
-    <div> Pick about 5 categories</div>
-    <div> Invite your students or friends</div>
+<div id="instructions" style="width:50%; float:left; padding:20px;">
+  <div id="to_do" style="padding-top:50px;">
+    <div><span class="bullet">*-*</span> Choose a topic: What do you want to explore? </div>
+    <br />
+    <div><span class="bullet">*-*</span> Pick about 5 categories</div>
+    <br />
+    <div><span class="bullet">*-*</span> Invite your students or friends</div>
+    <br />
   </div>
-  <div>
-  GO!
-  </div>
+  <br />
+  <div class="yellow_bg" style="border-radius:30px; padding:10px; width:40px;">GO!</div>
 </div>
 </div>
 
 <div id="siftr_helps" class="section yellow_bg">
-<div>
+<div style="text-align:center; color:#FFFFFF; padding:40px;">
 Siftr helps you focus, collect, visualize, discuss
 </div>
 </div>
