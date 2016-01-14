@@ -49,12 +49,31 @@ div,span,body
 .slide
 {
   float:left;
-  display:table-cell;
-  vertical-align:middle;
-  text-align:center;
-  color:#FFFFFF;
   height:100%;
   width:50%;
+}
+.slide_label
+{
+  font-size:20px;
+  padding-top:25%;
+  color:#FFFFFF;
+  text-align:center;
+}
+
+/* tags */
+.categories
+{
+  margin:0px auto;
+  width:70%;
+}
+.tag
+{
+  padding:5px;
+  margin:5px;
+  float:left;
+  background-color:#E9C32A; /* same as yellow-bg */
+  color:#FFFFFF;
+  border-radius:15px;
 }
 
 </style>
@@ -108,34 +127,38 @@ DISCOVER INVENT HEAR COME UPON SIGN SEE DETECT REVEAL FIND IT UNEARTH EXPLORE US
 WHAT ARE PEOPLE MAKING WITH SIFTR?
 </div>
 <div id="what_people_make_slideshow">
-<div class="slide" style="background-color:red;">FORAGING HUNTS</div>
-<div class="slide" style="background-color:blue;">SCAVENGER HUNTS</div>
+<div class="slide" style="background-color:red;">
+  <div class="slide_label">FORAGING<br />HUNTS</div>
+</div>
+<div class="slide" style="background-color:blue;">
+  <div class="slide_label">SCAVENGER<br />HUNTS</div>
+</div>
 </div>
 </div>
 
-<div id="tags" class="section white_bg">
-<div id="left_tags">
-  <div>
+<div id="tags" class="section white_bg" style="min-height:300px;">
+<div id="left_tags" style="width:50%; float:left;">
+  <div style="text-align:center; padding:50px 50px 10px 50px;">
   Discover the natural world around you with categories like these:
   </div>
-  <div id="categories">
-    <div> cherries </div>
-    <div> apples </div>
-    <div> plums </div>
-    <div> wild grapes </div>
-    <div> blackberries </div>
+  <div class="categories">
+    <div class="tag"> cherries </div>
+    <div class="tag"> apples </div>
+    <div class="tag"> plums </div>
+    <div class="tag"> wild grapes </div>
+    <div class="tag"> blackberries </div>
   </div>
 </div>
-<div id="right_tags">
-  <div>
+<div id="right_tags" style="width:50%; float:left;">
+  <div style="text-align:center; padding:50px 50px 10px 50px;">
   Or explore your neighborhood with categories like these:
   </div>
-  <div id="categories">
-    <div> play spaces </div>
-    <div> places to eat </div>
-    <div> street art </div>
-    <div> trees </div>
-    <div> best coffee </div>
+  <div class="categories">
+    <div class="tag"> play spaces </div>
+    <div class="tag"> places to eat </div>
+    <div class="tag"> street art </div>
+    <div class="tag"> trees </div>
+    <div class="tag"> best coffee </div>
   </div>
 </div>
 </div>
