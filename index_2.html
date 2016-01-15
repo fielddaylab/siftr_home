@@ -1,0 +1,357 @@
+<html>
+<head>
+<style>
+div,span,body
+{
+  margin:0px;
+  padding:0px;
+  font-family:Helvetica;
+  font-weight:lighter;
+  color:#29333F;
+}
+.white_bg
+{
+  background-color:#FFFFFF;
+}
+.light_bg
+{
+  background-color:#F7F7F7;
+}
+.dark_bg
+{
+  background-color:#323232;
+  color:#FFFFFF;
+}
+.yellow_bg
+{
+  background-color:#E9C32A;
+  color:#FFFFFF;
+}
+
+.section
+{
+  width:100%;
+}
+
+/* Top Bar */
+.top_bar_logo
+{
+  float:left;
+}
+.top_bar_link
+{
+  padding:10px;
+  color:#FFFFFF;
+  float:right;
+}
+
+/* lists */
+.list
+{
+  height:100%;
+  width:100%;
+  overflow:hidden;
+}
+.list_el
+{
+  width:200px;
+  height:100%;
+  float:left;
+}
+.list_el_img
+{
+  width:90%;
+  height:100px;
+  margin:0px auto;
+}
+.list_el_title
+{
+  padding:10px;
+}
+.list_el_description
+{
+  padding:10px;
+}
+.list_el_line
+{
+  width:90%;
+  height:1px;
+  margin:0px auto;
+  border-bottom:1px solid black;
+}
+.list_el_owner
+{
+  padding:10px;
+}
+.list_el_owner_icon
+{
+  width:20px;
+  height:20px;
+  padding:10px;
+  float:left;
+  border-radius:20px;
+  background-color:#E9C32A;
+  text-align:center;
+  color:#FFFFFF;
+}
+.list_el_owner_name
+{
+  padding:10px;
+  float:left;
+}
+
+/* slideshow */
+.slide
+{
+  float:left;
+  height:100%;
+  width:50%;
+}
+.slide_label
+{
+  font-size:20px;
+  padding-top:25%;
+  color:#FFFFFF;
+  text-align:center;
+}
+
+/* tags */
+.categories
+{
+  margin:0px auto;
+  width:70%;
+}
+.tag
+{
+  padding:5px;
+  margin:5px;
+  float:left;
+  background-color:#E9C32A; /* same as yellow-bg */
+  color:#FFFFFF;
+  border-radius:15px;
+}
+
+/* bullets */
+.bullet
+{
+  font-size:10px;
+  vertical-align:top;
+  color:#E9C32A; /* same as yellow-bg */
+  background-color:#E9C32A; /* same as yellow-bg */
+  height:10px;
+  width:10px;
+  border-radius:10px;
+}
+
+/* quadrants */
+.quadrant
+{
+  width:50%;
+  float:left;
+}
+.quadrant_icon
+{
+  width:20px;
+  height:20px;
+  margin:0px auto;
+  padding:30px;
+}
+.quadrant_title
+{
+  text-align:center;
+  font-weight:bold;
+}
+.quadrant_description
+{
+  text-align:center;
+  padding:20px 20px 20px 40px;
+}
+
+</style>
+</head>
+<body class="dark_bg">
+
+<div id="banner" class="section dark_bg" style="position:relative; min-height:300px;">
+<div id="top_bar" style="height:50px; padding:20px;">
+  <div class="top_bar_logo" style="color:#FFFFFF">Siftr</div>
+  <!-- will go right-to-left -->
+  <div class="top_bar_link" style="border:1px solid white; border-radius:20px;">SIGN UP</div>
+  <div class="top_bar_link">LOGIN</div>
+  <div class="top_bar_link">DISCOVER</div>
+  <div class="top_bar_link">MY ACCOUNT</div>
+  <div class="top_bar_link">MY SIFTRS</div>
+</div>
+<div style="width:200px; height:200px; margin:0px auto; color:#FF0000; border:1px solid white;">Siftr</div>
+<div class="spacer" style="height:50px;"></div>
+<div style="width:400px; height:30px; margin:0px auto; text-align:center; font-size:20px; color:#FFFFFF;">Explore your world, share your discoveries</div>
+<div><input type="text"></input></div>
+<div class="spacer" style="height:80px;"></div>
+</div>
+
+<div id="recent_siftrs" class="section white_bg">
+<div style="padding:20px;">
+RECENT SIFTRS
+</div>
+<div id="recent_siftrs_list" class="siftr_list" style="height:240px;">
+
+<div class="list_el">
+  <div class="list_el_img"></div>
+  <div class="list_el_title">Title</div>
+  <div class="list_el_description">Description</div>
+  <div class="list_el_line"></div>
+  <div class="list_el_owner">
+    <div class="list_el_owner_icon">AB</div>
+    <div class="list_el_owner_name">By You</div>
+  </div>
+</div>
+
+<div class="list_el">
+  <div class="list_el_img"></div>
+  <div class="list_el_title">Title</div>
+  <div class="list_el_description">Description</div>
+  <div class="list_el_line"></div>
+  <div class="list_el_owner">
+    <div class="list_el_owner_icon">CD</div>
+    <div class="list_el_owner_name">By Me</div>
+  </div>
+</div>
+
+<div class="list_el">
+  <div class="list_el_img"></div>
+  <div class="list_el_title">Title</div>
+  <div class="list_el_description">Description</div>
+  <div class="list_el_line"></div>
+  <div class="list_el_owner">
+    <div class="list_el_owner_icon">EF</div>
+    <div class="list_el_owner_name">By Him</div>
+  </div>
+</div>
+
+<div class="list_el">
+  <div class="list_el_img"></div>
+  <div class="list_el_title">Title</div>
+  <div class="list_el_description">Description</div>
+  <div class="list_el_line"></div>
+  <div class="list_el_owner">
+    <div class="list_el_owner_icon">GH</div>
+    <div class="list_el_owner_name">By Her</div>
+  </div>
+</div>
+
+</div>
+</div>
+
+<div id="what_people_make" class="section dark_bg" style="height:300px;">
+<div style="padding:20px; text-align:center; color:#FFFFFF;">
+JOIN A SIFTR
+</div>
+<div id="what_people_make_slideshow">
+<div class="slide" style="background-color:red;">
+  <div class="slide_label">FORAGING<br />HUNTS</div>
+</div>
+<div class="slide" style="background-color:blue;">
+  <div class="slide_label">SCAVENGER<br />HUNTS</div>
+</div>
+</div>
+</div>
+
+<div id="tags" class="section white_bg" style="min-height:300px;">
+<div id="left_tags" style="width:50%; float:left;">
+  <div style="text-align:center; padding:50px 50px 10px 50px;">
+  Discover the natural world around you with categories like these:
+  </div>
+  <div class="categories">
+    <div class="tag"> cherries </div>
+    <div class="tag"> apples </div>
+    <div class="tag"> plums </div>
+    <div class="tag"> wild grapes </div>
+    <div class="tag"> blackberries </div>
+  </div>
+</div>
+<div id="right_tags" style="width:50%; float:left;">
+  <div style="text-align:center; padding:50px 50px 10px 50px;">
+  Or explore your neighborhood with categories like these:
+  </div>
+  <div class="categories">
+    <div class="tag"> play spaces </div>
+    <div class="tag"> places to eat </div>
+    <div class="tag"> street art </div>
+    <div class="tag"> trees </div>
+    <div class="tag"> best coffee </div>
+  </div>
+</div>
+</div>
+
+<div id="anybody_can_make" class="section light_bg" style="min-height:300px;">
+<div id="got_five" style="width:40%; float:left; padding:20px;">
+  <div style="padding-top:50px;">
+    <div style="float:left;">
+    Siftr
+    </div>
+    <div style="float:left;">
+    Got five minutes? Anybody can make a Siftr.
+    </div>
+  </div>
+</div>
+<div id="instructions" style="width:50%; float:left; padding:20px;">
+  <div id="to_do" style="padding-top:50px;">
+    <div><span class="bullet">*-*</span> Choose a topic: What do you want to explore? </div>
+    <br />
+    <div><span class="bullet">*-*</span> Pick about 5 categories</div>
+    <br />
+    <div><span class="bullet">*-*</span> Invite your students or friends</div>
+    <br />
+  </div>
+  <br />
+  <div class="yellow_bg" style="border-radius:30px; padding:10px; width:40px;">GO!</div>
+</div>
+</div>
+
+<div id="siftr_helps" class="section yellow_bg">
+<div style="text-align:center; color:#FFFFFF; padding:40px;">
+Siftr helps you focus, collect, visualize, discuss
+</div>
+</div>
+
+<div id="quadrants" class="section white_bg" style="height:450px;">
+  <div id="focus_quadrant" class="quadrant">
+    <div class="quadrant_icon">Icon</div>
+    <div class="quadrant_title">Ready, set, focus:</div>
+    <div class="quadrant_description">Let's face it, the world is too much to take in all at once. Siftr helps you focus before you set out to explore.</div>
+  </div>
+  <div id="collect_quadrant" class="quadrant">
+    <div class="quadrant_icon">Icon</div>
+    <div class="quadrant_title">Collect:</div>
+    <div class="quadrant_description">Siftr collects all your discoveries into one spot where everyone you want can see and add to them. It lets you collaborate with others on your projects.</div>
+  </div>
+  <div id="see_quadrant" class="quadrant">
+    <div>
+    <div class="quadrant_icon">Icon</div>
+    </div>
+    <div class="quadrant_title">See your discoveries:</div>
+    <div class="quadrant_description">Siftr visualizes everything you collect - the photos and the places you found them. In the future, Siftr will create charts, graphs, overlays, and more.</div>
+  </div>
+  <div id="discuss_quadrant" class="quadrant">
+    <div class="quadrant_icon">Icon</div>
+    <div class="quadrant_title">Discuss:</div>
+    <div class="quadrant_description">Siftr smoothly faciilitates discussions whether you are in a classroom setting, sitting over tea with a friend, or a world away. It can privately engage specific communitites, like a middle school history class or a group of neighbors.</div>
+  </div>
+</div>
+
+<div id="what_will_you_make" class="section white_bg" style="height:500px;">
+<div style="width:50%; float:left;">
+<div style="padding:100px; font-size:40px;"> What kind of Siftr Will you make?  </div>
+<div style="padding-left:100px;">
+  <div class="yellow_bg" style="border-radius:30px; padding:10px; width:70px;">Sign up!</div>
+</div>
+</div>
+<div style="width:50%; float:left;"> Phone</div>
+</div>
+
+<div id="footer" class="section dark_bg" style="height:80px;">
+<div class="dark_bg" style="text-align:center; padding:20px 0px 10px 0px;">FIELD DAY</div>
+<div class="dark_bg" style="text-align:center; font-size:10px; ">A Field Day Experiment</div>
+</div>
+
+</body>
+</html>
